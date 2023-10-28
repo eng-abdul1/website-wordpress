@@ -1,0 +1,39 @@
+/*  ----------------------------------------------------------------------------
+    responsive settings
+*/
+/* responsive landscape tablet */
+/* responsive portrait tablet */
+/* responsive portrait phone */
+/*
+Animals Pro Demo
+*/
+.td-animals-pro .td-post-content img {
+  display: block;
+  border-bottom: 5px solid #edcb21;
+}
+@media (min-width: 768px) and (max-width: 1140px) {
+  .td-animals-pro .td-instagram-profile-image {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .td-animals-pro .td-instagram-meta {
+    text-align: center;
+  }
+  .td-animals-pro .td-instagram-user a {
+    overflow: visible;
+    text-overflow: unset;
+    margin-right: 0;
+  }
+  .td-animals-pro .td-instagram-followers {
+    margin-top: -7px;
+  }
+  .td-animals-pro .td-instagram-button {
+    display: block;
+    position: static;
+    margin-top: 10px;
+  }
+}
+.td-animals-pro #td-theme-settings .td-skin-buy a {
+  background-color: #ff4033;
+}

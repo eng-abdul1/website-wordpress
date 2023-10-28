@@ -1,0 +1,30 @@
+// infinite loader
+.tdb-autoload-wrap {
+  position: relative;
+
+  .tdb-loader-autoload {
+    top: auto !important;
+    bottom: 50px !important;
+  }
+}
+
+.tdb-autoload-debug {
+  display: none;
+  width: 1068px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /* responsive portrait tablet */
+  @media (min-width: @responsive_l_tablet_min) and (max-width: @responsive_p_tablet_max) {
+    width: 740px;
+  }
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    display: none;
+
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

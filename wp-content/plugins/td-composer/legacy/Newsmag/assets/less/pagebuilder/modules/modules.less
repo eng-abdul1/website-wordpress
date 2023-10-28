@@ -1,0 +1,146 @@
+// general fonts setup
+.td_module_1,
+.td_module_2,
+.td_module_3,
+.td_module_4,
+.td_module_5 {
+  .entry-title {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 0 9px 0;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      font-size: 15px !important;
+      line-height: 19px !important;
+      margin-bottom: 8px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      font-size: 19px !important;
+      line-height: 24px !important;
+    }
+  }
+
+  .td-module-thumb {
+    /* responsive portrait tablet */
+    @media (max-width: @responsive_p_tablet_max) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .meta-info {
+    margin-bottom: 14px;
+    line-height: 11px;
+
+    /* responsive portrait tablet */
+    @media (max-width: @responsive_p_tablet_max) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .td-post-author-name,
+  .td-post-date {
+    margin-bottom: 3px;
+  }
+}
+
+.td_module_6,
+.td_module_7,
+.td_module_8 {
+  .entry-title {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 0 0 7px 0;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin-bottom: 5px;
+      font-size: 12px !important;
+      line-height: 15px !important;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      font-size: 14px !important;
+      line-height: 19px !important;
+    }
+  }
+
+  .td-post-author-name,
+  .td-post-date {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+  }
+
+  .meta-info {
+    margin-bottom: 0;
+    line-height: 11px;
+  }
+}
+
+// stars
+.entry-review-stars {
+  display: inline-block;
+  position: relative;
+  left: 1px;
+  vertical-align: middle;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  top: 0;
+}
+
+
+
+/*  ----------------------------------------------------------------------------
+    thumbnails
+*/
+.td_module_wrap {
+  position: relative;
+  z-index: 0; // fix category pulldown over the video icon on modules thumb
+}
+
+.td-video-play-ico {
+  position: absolute;
+  left:50%;
+  top:50%;
+  z-index: 2;
+
+  img {
+    position: relative;
+    left:-50%;
+    top:-20px !important;
+  }
+
+  &.td-video-small img {
+    top:-10px !important;
+  }
+}
+
+
+
+/*  ----------------------------------------------------------------------------
+    hover title
+*/
+// disable hover for individual modules
+.td_module_mx1 {
+  &:hover .entry-title a {
+    color: #fff;
+  }
+}
+
+// category on module
+.td-module-image {
+  position: relative;
+
+  .td-post-category {
+    position: absolute;
+    border-radius: 0 3px 0 0;
+    bottom: 0;
+    display: block;
+  }
+}

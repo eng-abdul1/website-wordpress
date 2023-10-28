@@ -1,0 +1,30 @@
+// background ad click cursor
+.td-background-link {
+  #td-outer-wrap {
+    cursor: pointer;
+
+    // fix for clickable background ad image not working..
+    .td-main-content-wrap {
+      pointer-events: none;
+    }
+    .td-main-content-wrap .td-container {
+      pointer-events: auto;
+    }
+  }
+}
+
+.td-background-link {
+  .td-header-container,
+  .td-container {
+    cursor: auto;
+  }
+}
+
+// background ad click cursor adjustment for post template 6
+.single_template_6 {
+  &.td-background-link{
+    #td-outer-wrap {
+      cursor: auto;
+    }
+  }
+}

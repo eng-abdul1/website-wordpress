@@ -1,0 +1,71 @@
+@import "../../less_files/variables.less";
+
+/*
+Influencer Demo
+*/
+
+.td-influencer {
+
+  .td-flex-home-cat {
+    .td-post-category {
+      position: relative;
+      margin-left: 30px;
+
+      &:before {
+        content:'';
+        width: 20px;
+        height: 1px;
+        background-color: #ff4033;
+        position: absolute;
+        left: -30px;
+        top: 4px;
+      }
+    }
+  }
+
+  .td-influencer-menu .tdb-normal-menu .tdb-sub-menu-icon {
+    display: none;
+  }
+
+  @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_l_tablet_max) {
+
+    .td-instagram-profile-image {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .td-instagram-meta {
+      text-align: center;
+    }
+
+    .td-instagram-user a {
+      overflow: visible;
+      text-overflow: unset;
+      margin-right: 0;
+    }
+
+    .td-instagram-followers {
+      margin-top: -7px;
+    }
+
+    .td-instagram-button {
+      display: block;
+      position: static;
+      margin-top: 10px;
+    }
+  }
+
+  .td-influencer-footer-menu .tdb-menu > li {
+
+    @media (max-width: @responsive_p_phone_max){
+      float: none;
+      display: inline-block;
+    }
+  }
+
+  // demos button
+  #td-theme-settings .td-skin-buy a {
+    background-color: #ff4033;
+  }
+}

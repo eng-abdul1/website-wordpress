@@ -1,0 +1,88 @@
+// 10. Footer
+
+/*  ----------------------------------------------------------------------------
+    Sub Footer
+*/
+.td-sub-footer-container {
+  background-color: #0d0d0d;
+  color: #ccc;
+  font-size: 12px;
+  font-family: @font1;
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    text-align: center;
+    padding: 6px 0;
+  }
+}
+
+.td-sub-footer-copy {
+  line-height: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    float: none !important;
+  }
+}
+
+/* Sub Footer Menu */
+.td-sub-footer-container .td-sub-footer-menu {
+  float: right;
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    float: none;
+  }
+}
+
+.td-subfooter-menu {
+  display: inline-block;
+  margin: 7px 0;
+  float: right;
+
+  /* responsive landscape tablet */
+  @media (min-width: @responsive_l_tablet_min) and (max-width: @responsive_l_tablet_max) {
+    padding-right: 40px;
+  }
+
+  /* responsive portrait tablet */
+  @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+    padding-right: 48px;
+  }
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    float: none;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 0;
+    line-height: 18px;
+
+    a {
+      margin-right: 16px;
+      line-height: 18px;
+      display: inline-block;
+      color: #ccc;
+
+      &:hover {
+        color: @td_theme_color;
+      }
+    }
+
+    &:last-child a {
+      margin-right: 0;
+    }
+  }
+
+  ul {
+    display: none;
+  }
+
+  .fa {
+    margin-right: 3px;
+  }
+}

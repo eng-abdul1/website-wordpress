@@ -1,0 +1,85 @@
+// 8.2 Post template
+
+/*  ----------------------------------------------------------------------------
+    Default Post Template
+*/
+
+// remove empty <p></p>
+.td-post-content p:empty {
+  display: none;
+}
+
+.td-post-featured-image {
+  position: relative;
+
+  img {
+    display: block;
+    margin-bottom: 26px;
+    width: 100%;
+  }
+
+  .wp-caption-text {
+    margin-bottom: 26px;
+    z-index: 1;
+  }
+}
+
+.td-post-content {
+  margin-top: 21px; //30px;
+  padding-bottom: 16px; //40px;
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    margin-top: 16px;
+  }
+
+  p {
+    word-wrap: break-word;
+  }
+
+  img {
+    display: block;
+  }
+
+  table {
+    margin-bottom: 21px;
+  }
+
+  .td-gallery {
+    clear: both;
+  }
+
+  .fb-video {
+    margin-bottom: 26px;
+  }
+
+  #fb-root + p {
+    margin: 0;
+  }
+}
+
+.td-post-template-default {
+
+  // post title container - header
+  .td-post-title {
+    .td-post-comments {
+      margin-left: 22px;
+    }
+    div.td-post-views {
+      margin-right: 0;
+    }
+  }
+
+  // post title
+  .td-post-header header .entry-title {
+    @media (max-width: @responsive_p_tablet_max) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  // featured image
+  .td-post-featured-image img {
+    width: auto;
+  }
+}

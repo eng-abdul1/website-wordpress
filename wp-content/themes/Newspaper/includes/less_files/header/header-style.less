@@ -1,0 +1,145 @@
+/* -------------------------------------------------------------------
+
+Headers style
+
+----------------------------------------------------------------------  */
+/* General */
+.td-banner-wrap-full {
+  position: relative;
+}
+
+.td-header-menu-wrap-full {
+  z-index: 9998;
+  position: relative;
+}
+
+/* responsive portrait phone */
+@media (max-width: @responsive_p_phone_max) {
+  .td-header-wrap {
+    .td-header-menu-wrap-full,
+    .td-header-menu-wrap,
+    .td-header-main-menu {
+      background-color: #222 !important;
+      height: 54px !important;
+    }
+  }
+
+  .header-search-wrap .td-icon-search {
+    color: #fff !important;
+  }
+}
+
+
+
+/* ----------------------------------------------- */
+// Text logo
+.td-logo-text-container {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  z-index: 1;
+
+  span {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .td-logo-text {
+    font-size: 75px;
+    font-family: serif;
+    color: #222;
+    line-height: 1;
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      font-size: 36px;
+    }
+  }
+
+  .td-logo {
+    line-height: 1 !important;
+  }
+
+  .td-tagline-text {
+    letter-spacing: 1.8px;
+    font-size: 12px;
+    font-family: serif;
+    color: #777;
+    padding-top: 2px;
+    padding-bottom: 10px;
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      font-size: 11px;
+    }
+  }
+}
+
+.td-header-wrap .td-header-menu-wrap-full {
+  background-color: #fff;
+}
+
+
+
+/* -------------------------------------------------------------------
+  Style Default
+----------------------------------------------------------------------  */
+.td-header-style-1 {
+
+  // logo
+  .td-logo-text-wrap {
+    min-height: 130px;
+    line-height: 130px;
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      line-height: 90px;
+      min-height: 90px;
+    }
+
+    a {
+      position: relative;
+      z-index: 1;
+      line-height: 130px;
+      display: inline-block;
+      vertical-align: middle;
+
+      /* responsive portrait phone */
+      @media (max-width: @responsive_p_phone_max) {
+        line-height: 90px;
+      }
+    }
+
+    .td-logo {
+      line-height: 130px;
+      /* responsive portrait phone */
+      @media (max-width: @responsive_p_phone_max) {
+        line-height: 90px;
+      }
+    }
+  }
+
+  // text logo
+  .td-logo-text-container a {
+    line-height: 1;
+  }
+
+  .td-header-sp-logo {
+    text-align: center;
+  }
+
+  //search
+  .header-search-wrap .td-icon-search {
+    color: #000;
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      color: #fff;
+    }
+  }
+
+  //main-menu
+  .td-header-menu-wrap-full {
+    position: relative;
+  }
+}

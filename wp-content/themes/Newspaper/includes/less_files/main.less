@@ -1,0 +1,140 @@
+/*
+Theme Name: 	Newspaper
+Theme URI: 		http://tagdiv.com
+Description: 	Premium WordPress template, clean and easy to use.
+Version: 		__td_deploy_version__
+Author: 		tagDiv
+Author URI: 	http://themeforest.net/user/tagDiv/portfolio
+License:
+License URI:
+Text Domain:    newspaper
+Tags:black, white, one-column, two-columns, fixed-layout
+
+-------------------------------------
+Table of content:
+-------------------------------------
+1.  Variables
+2.  Mixin
+3.  Normalize
+4.  Theme Grid
+5.  Header
+6.  Typography
+7.  Modules
+8.  Post and Page
+      8.1 Page
+      8.2 Post template
+      8.3 Comments
+      8.4 Gutenberg
+      8.5 Galleries
+9. Misc
+10. Footer
+
+   _ _
+  | \ | ___  _ _ _  ___ ___  ___  ___  ___  _ _
+  |   |/ ._>| | | |<_-<| . \<_> || . \/ ._>| '_>
+  |_\_|\___.|__/_/ /__/|  _/<___||  _/\___.|_|
+                       |_|       |_|
+    ~ tagDiv 2019 ~
+
+  Thanks for using our theme !
+  Our portfolio is here: http://tagdiv.com
+
+*/
+
+
+// speed booster fix
+body {
+  visibility: visible !important;
+}
+
+@import "variables.less";
+@import "mixin.less";
+
+// Reset
+@import "normalize.less";
+
+// Reset the box-sizing
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  width : auto\9;
+  height: auto;
+}
+
+.td-main-content-wrap,
+.td-category-grid {
+  background-color: #fff;
+}
+
+// item scope meta
+.td-page-meta {
+  display: none;
+}
+
+
+// grid
+@import "grid/grid.less";
+@import "grid/grid_blocks.less";
+@import "grid/grid_responsive.less";
+
+
+// header
+@import "header/header.less";
+@import "header/header-search.less";
+@import "header/header-style.less";
+@import "header/menu-header.less";
+@import "header/menu-mobile.less";
+@import "header/magnific-popup.less";
+
+
+// type
+@import "type.less";
+
+
+// modules
+@import "pagebuilder/modules/modules.less";
+@import "pagebuilder/modules/module_15.less";
+@import "pagebuilder/modules/module_16.less";
+@import "pagebuilder/modules/module_mx2.less";
+@import "block-templates.less";
+
+
+//css splitter for ie8 ie9
+;#td_css_split_separator{visibility: visible};
+
+// post and page
+@import "page.less";
+@import "single/post.less";
+@import "single/post-templates.less";
+@import "single/comments.less";
+@import "single/gutenberg.less";
+@import "single/galleries.less";
+
+
+//css splitter for ie8 ie9
+;#td_css_split_separator{visibility: visible};
+
+
+// misc
+@import "misc/font-icons.less";
+@import "misc/widgets-default.less";
+@import "misc/retina.less";
+@import "misc/totop.less";
+@import "misc/style_customizer.less";
+@import "misc/print.less";
+@import "misc/animation-stack.less";
+
+
+// footer
+@import "footer/footer.less";

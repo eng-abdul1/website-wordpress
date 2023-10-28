@@ -1,0 +1,32 @@
+// backstretch image for site bg image
+.backstretch {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -99999;
+  top: 0;
+}
+
+body .td-backstretch {
+  max-width: none;
+  opacity: 0;
+  transition: opacity 2s;
+  display: block;
+}
+
+body .td-stretch-width {
+  height: auto;
+  width: 100.03%;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  .transform(translateX(-50%));
+}
+
+body .td-stretch-height {
+  position: relative;
+  height: 100%;
+  width: auto;
+  left: 50%;
+  .transform(translateX(-50%));
+}
